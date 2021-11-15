@@ -1,0 +1,103 @@
+:root {
+  --gut: 0.5rem;
+}
+
+body {
+  background: teal;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body, 
+h2 {
+  margin: 0;
+  padding: 0;
+}
+body,
+textarea {
+  font-family: sans-serif;
+}
+body, 
+h2 ,
+textarea {
+  font-size: 16px;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.panels {
+  display: flex;
+  margin: var(--gut);
+  height: calc(100% - var(--gut) * 2);
+  margin-left: calc(var(--gut) * 0.5);
+  margin-right: calc(var(--gut) * 0.5);
+}
+
+.panel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 250px;
+  background: #ddd;
+  padding: var(--gut);
+  margin-left: calc(var(--gut) * 0.5);
+  margin-right: calc(var(--gut) * 0.5);
+  border-radius: 3px;
+  overflow: auto;
+}
+
+.panel li.task {
+  cursor: pointer;
+}
+
+.panel-end {
+  margin-top: auto;
+}
+
+.task {
+  margin-top: var(--gut);
+  background: #fff;
+  padding: var(--gut);
+  box-shadow: 3px 2px 1px #999;
+  border-radius: 3px;
+  border: 0;
+}
+
+.task-actions > button {
+  margin-top: var(--gut);
+  margin-right: var(--gut);
+  cursor: pointer;
+}
+
+.task-edit textarea {
+  width: calc(100% - var(--gut) * 2);
+}
+
+.task-edit .task-actions > button {
+  padding: var(--gut);
+}
+
+.task-edit-actions-add {
+  background: green;
+  color: #fff;
+  border-radius: 3px;
+}
